@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.rexel.fr/frx/HAGWXF122/p/71742449",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -203,7 +203,7 @@ response = requests.get(
     params={
         "query": "prise",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
